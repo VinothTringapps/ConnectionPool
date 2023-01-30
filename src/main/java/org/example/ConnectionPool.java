@@ -9,11 +9,11 @@ import java.util.logging.*;
 
 
 public class ConnectionPool {
-    private static ConnectionPool ConnectionPool_instance=null;
+    private static  ConnectionPool ConnectionPool_instance=null;
     Logger l=Logger.getLogger("ConnectionPool");
-   public String databaseName;
-   public String userName;
-   public String userPassword;
+    String databaseName;
+    String userName;
+    String userPassword;
    Connection con;
     private ConnectionPool(){
 
