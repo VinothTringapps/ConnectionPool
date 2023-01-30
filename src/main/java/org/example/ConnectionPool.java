@@ -9,7 +9,7 @@ import java.util.logging.*;
 
 
 public class ConnectionPool {
-    private static  ConnectionPool ConnectionPool_instance=null;
+    private static  ConnectionPool connectionPool_Instance=null;
     Logger l=Logger.getLogger("ConnectionPool");
     String databaseName;
     String userName;
@@ -21,10 +21,10 @@ public class ConnectionPool {
 
 
   public static  ConnectionPool getInstance(){
-    if(ConnectionPool_instance==null){
-        ConnectionPool_instance =new ConnectionPool();
+    if(connectionPool_Instance==null){
+        connectionPool_Instance =new ConnectionPool();
     }
-    return ConnectionPool_instance;
+    return connectionPool_Instance;
  }
 
  public void create(String name,String user,String password) {
